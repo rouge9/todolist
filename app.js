@@ -26,6 +26,10 @@ app.post("/", (req, res) =>{
 
 });
 
+app.get("/about", (req, res)=>{
+    res.render("about");
+});
+
 app.listen(3000,  (req, res) => {
     console.log("server on 3000")
 });
